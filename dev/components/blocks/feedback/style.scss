@@ -1,0 +1,131 @@
+.feed {
+  background: #4789ce;
+  margin-bottom: 60px;
+
+  @media only screen and (max-width: 991px) {
+    margin-bottom: 30px;
+  }
+
+  &__inner {
+    padding: 60px 0;
+    display: grid;
+    grid-template-columns: 1fr 446px;
+    grid-gap: 50px;
+    align-items: center;
+
+    @media only screen and (max-width: 991px) {
+      padding: 30px 0;
+      grid-template-columns: 1fr;
+      grid-gap: 40px;
+    }
+  }
+
+  &__content {
+    background: linear-gradient(152deg, #5dc4ff 36%, #0b5281 100%);
+    border-radius: 20px;
+    padding: 20px 0px 0px 20px;
+    position: relative;
+    min-height: 288px;
+    flex-shrink: 0;
+
+    @media only screen and (max-width: 991px) {
+      min-height: 198px;
+    }
+
+    &--top {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 40px;
+
+      @media only screen and (max-width: 991px) {
+        margin-bottom: 20px;
+        font-size: 20px;
+      }
+    }
+
+    &--text {
+      max-width: 200px;
+      font-size: 16px;
+      line-height: 102%;
+
+      @media only screen and (max-width: 991px) {
+        font-size: 14px;
+        max-width: 63%;
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 102%;
+    color: #fff;
+    margin-bottom: 20px;
+
+    @media only screen and (max-width: 991px) {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__text {
+    color: #fff;
+
+    margin-bottom: 30px;
+    line-height: 102%;
+
+    @media only screen and (max-width: 991px) {
+      text-align: center;
+    }
+  }
+
+  &__labels {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 18px;
+    margin-bottom: 30px;
+    
+    @media only screen and (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
+
+    .field {
+      margin-bottom: 0;
+    }
+  }
+
+  &__btn {
+    height: 58px;
+    margin-top: 30px;
+    border: 0;
+    width: 187px;
+    cursor: pointer;
+
+    @media only screen and (max-width: 991px) {
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+
+    .btn-before {
+      justify-content: center;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: 991px) {
+      width: 133px;
+      height: 133px;
+    }
+  }
+
+  .thanks-content {
+    padding: 0;
+  }
+}

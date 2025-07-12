@@ -1,0 +1,54 @@
+@use '../../style/scss/variables.scss' as *;
+
+.footer {
+  width: 100%;
+  background: #f0f0f0;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 23px 0;
+
+    @media only screen and (max-width: 767px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+  }
+
+  &__left {
+    p {
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    span {
+      color: #7e7e7e;
+      display: block;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+  }
+
+  &__soc {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    a {
+      display: flex;
+      align-items: center;
+      color: #001737;
+      gap: 9px;
+
+      span {
+        text-decoration: underline;
+      }
+
+      &:last-child {
+        color: #ff0209;
+      }
+    }
+  }
+}

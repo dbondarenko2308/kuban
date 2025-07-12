@@ -1,0 +1,109 @@
+@use '../../style/scss/variables.scss' as *;
+
+.header {
+  width: 100%;
+  background: #fff;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: 767px) {
+      height: 31px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+  }
+
+  &__number {
+    margin-right: 40px;
+
+    @media only screen and (max-width: 767px) {
+      margin-right: 18px;
+    }
+
+
+    p {
+      font-weight: 500;
+
+      @media only screen and (max-width: 991px) {
+        font-size: 14px;
+      }
+      
+    }
+    span {
+      display: block;
+      color: #7e7e7e;
+      font-size: 12px;
+      text-align: right;
+    }
+  }
+
+  &__soc {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    @media only screen and (max-width: 767px) {
+      gap: 5px;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 128px;
+      height: 30px;
+      border-radius: 30px;
+      cursor: pointer;
+
+      @media only screen and (max-width: 767px) {
+        span {
+          display: none;
+        }
+
+        width: 31px;
+        height: 31px;
+        border-radius: 30px;
+
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &.header__app {
+        background: #5fc366;
+        color: #fff;
+        font-size: 14px;
+        gap: 13px;
+      }
+
+      &.header__telega {
+        background: #00b0f2;
+        color: #fff;
+        font-size: 14px;
+        gap: 13px;
+
+        svg {
+          left: -2px;
+          position: relative;
+        }
+      }
+    }
+  }
+}
