@@ -83,20 +83,20 @@ $(document).ready(function() {
 		showStep(currentStep)
 	})
 
-	$('.mont__videos_play').on('click', function() {
-		const $container = $(this).closest('.mont__videos_video')
-		const $video = $container.find('video').get(0)
-		const $button = $(this)
+	// $('.mont__videos_play').on('click', function() {
+	// 	const $container = $(this).closest('.mont__videos_video')
+	// 	const $video = $container.find('video').get(0)
+	// 	const $button = $(this)
 
-		$video.play()
-		$button.removeClass('active').hide()
-	})
+	// 	$video.play()
+	// 	$button.removeClass('active').hide()
+	// })
 
-	$('.mont__videos_video video').on('click', function() {
-		if (!this.paused) {
-			this.pause()
-			const $container = $(this).closest('.mont__videos_video')
-			$container.find('.mont__videos_play').addClass('active').show()
-		}
-	})
+	// $('.mont__videos_video video').on('click', function() {
+	// 	if (!this.paused) {
+	// 		this.pause()
+	// 		const $container = $(this).closest('.mont__videos_video')
+	// 		$container.find('.mont__videos_play').addClass('active').show()
+	// 	}
+	// })
 })
